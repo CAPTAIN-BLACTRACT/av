@@ -1,59 +1,48 @@
-# Av
+# AV - Algorithm Visualizer
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+This project is an algorithm visualizer built using Angular. It was generated using Angular CLI version 21.0.4.
 
-## Development server
+## Overview
+
+The Algorithm Visualizer helps with visualizing different algorithms in an intuitive interface. Currently, this repository contains the Angular source code and configuration files needed to run and build the application.
+
+## Prerequisites
+
+Before running the project locally, make sure you have the following installed:
+
+- Node.js
+- npm (Node Package Manager)
+- Angular CLI
+
+## Installation
+
+1. Clone the repository.
+2. Navigate to the project folder.
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+## Development Server
 
 To start a local development server, run:
 
 ```bash
 ng serve
 ```
+Then open your browser and go to:
+```bash
+http://localhost:4200/
+```
+## Code Scaffolding
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+To generate a new component, directive, or service use the Angular CLI:
 
 ```bash
 ng generate component component-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## About
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project was generated with Angular CLI and serves as a starting point for visualizing algorithms using Angular.
