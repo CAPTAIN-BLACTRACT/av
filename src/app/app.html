@@ -1,0 +1,41 @@
+<main class="container">
+  <h1> Algo Vision </h1>
+
+  <div class="controls">
+    <button (click)="resetArray()" [disabled]="isSorting()"> New Array</button>
+
+    <div class="group">
+
+      <label>Size</label>
+      <input type="range" min="10" max="100" [ngModel]="arraySize()" (ngModelChange)="arraySize.set($event); resetArray()" [disabled]="isSorting()">
+
+    </div>
+    <div class="group">
+      <label>Speed</label>
+      <input type="range" min="10" max="500" [ngModel]="speed()" (ngModelChange)="speed.set($event)">
+
+    </div>
+
+    <div class="buttons">
+
+      <button class="primary" (click)="bubbleSort()" [disabled]="isSorting()">Bubble Sort</button>
+      <button class="primary" (click)="selectionSort()" [disabled]="isSorting()">Selection Sort</button>
+    </div>
+
+  </div>
+
+  <div class="visualizer">
+    @for (bar of bars(); track $index){
+    <div class="bar"
+      [style.height.%]="bar.value"
+      [style.width.%]="100/arraySize()"
+      [class.compare]="bar.state==='compare'"
+      [class.swap]="bar.state=== 'swap'"
+      [class.sorted]="bar.state==='sorted'">
+
+    </div>
+    }
+
+  </div>
+
+</main>
