@@ -132,6 +132,6 @@ export class App {
   }
 
   delay(ms: number){
-    return new Promise(resolve=> setTimeout(resolve,ms));
+    return new Promise(resolve=> setTimeout(resolve,(1/ms)));
   }
 }

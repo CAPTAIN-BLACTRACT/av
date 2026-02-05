@@ -11,8 +11,8 @@
 
     </div>
     <div class="group">
-      <label>Delay</label>
-      <input type="range" min="10" max="500" [ngModel]="speed()" (ngModelChange)="speed.set($event)">
+      <label>Speed</label>
+      <input type="range" min="0.002" max="0.1" step="0.001" [ngModel]="speed()" (ngModelChange)="speed.set($event)">
 
     </div>
 
