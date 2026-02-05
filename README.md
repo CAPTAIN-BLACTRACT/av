@@ -1,4 +1,4 @@
-# AV - Algorithm Visualizer
+# AV - Algorithm Visualizerrr
 
 This project is an algorithm visualizer built using Angular. It was generated using Angular CLI version 21.0.4.
 
